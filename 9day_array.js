@@ -43,7 +43,28 @@ let wilds = ["Tiger", "Wolf", "Zebra"];
 
 // spread operator
 
-let newArr = [...pets, ...wilds]
-console.log(newArr)
+// let newArr = [...pets, ...wilds]
+// console.log(newArr)
 
+
+
+// example 5 
+const ex5 = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+
+// const exx5 = ex5.flat(Infinity)
+// console.log(exx5);
+
+// example 6
+// console.log(Array.isArray('game'))
+// console.log(Array.from('game'))
+// console.log(Array.from({name: "game"})) // interesting
+
+
+
+// example 6
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3));
 
