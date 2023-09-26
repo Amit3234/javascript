@@ -32,3 +32,11 @@ let ex3 = ["Apple", "Banana", "Mango", "Orange", "Papaya", "Red", "Green", "Blue
 // console.log(exx3)
 // console.log(exxx3)
 // console.log(ex3)
+
+
+// example 4 
+let pets = ["Cat", "Dog", "Parrot"];
+let wilds = ["Tiger", "Wolf", "Zebra"];
+
+let newArr = pets.concat(wilds)
+console.log(newArr)
