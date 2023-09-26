@@ -38,5 +38,12 @@ let ex3 = ["Apple", "Banana", "Mango", "Orange", "Papaya", "Red", "Green", "Blue
 let pets = ["Cat", "Dog", "Parrot"];
 let wilds = ["Tiger", "Wolf", "Zebra"];
 
-let newArr = pets.concat(wilds)
+// let newArr = pets.concat(wilds)
+// console.log(newArr)
+
+// spread operator
+
+let newArr = [...pets, ...wilds]
 console.log(newArr)
+
+
