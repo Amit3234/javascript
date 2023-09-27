@@ -21,8 +21,17 @@ const user = {
 // console.log(user["full name"]);
 // console.log(user.sym);
 // console.log(typeof user.sym);
-console.log(user[sym]);
-console.log(typeof user[sym]);
+// console.log(user[sym]);
+// console.log(typeof user[sym]);
+
+
+user.email = "ajay@micro.com"
+console.log(user.email);
+Object.freeze(user)
+
+user.email = "ajay@apple.com"
+user.name = 'aman'
+console.log(user.name);
 
 
 
