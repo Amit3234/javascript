@@ -29,6 +29,16 @@ const regularUser = {
         }
     }
 }
-
 // console.log(regularUser)
-console.log(regularUser.fullName.userName.firstname)
+// console.log(regularUser.fullName.userName.firstname)
+
+
+// example 4 
+const ex4 = {1 : 'a', 2 : 'b'}
+const exx4 = {3 : 'c', 4 : 'd'}
+
+// const exxx4 = {ex4, exx4}
+// const exxx4 = Object.assign({}, ex4, exx4)
+const exxx4 = {...ex4, ...exx4}
+
+console.log(exxx4);
