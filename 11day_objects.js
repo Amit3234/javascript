@@ -17,6 +17,10 @@ loguser.name = 'john cena'
 loguser.logIn = true
 
 // console.log(loguser)
+// console.log(Object.keys(loguser));
+// console.log(Object.values(loguser));
+// console.log(Object.entries(loguser));
+console.log(loguser.hasOwnProperty('name'))
 
 
 // example 3 
@@ -41,4 +45,24 @@ const exx4 = {3 : 'c', 4 : 'd'}
 // const exxx4 = Object.assign({}, ex4, exx4)
 const exxx4 = {...ex4, ...exx4}
 
-console.log(exxx4);
+// console.log(exxx4);
+
+
+
+// example 5 
+const user = [
+    {
+        id : 1,
+        email : 'john@gmail.com'
+    },
+    {
+        id : 2,
+        email : 'john@gmail.com'
+    },
+    {
+        id : 3,
+        email : 'john@gmail.com'
+    }
+]
+const game =  user[1].id
+// console.log(game)
