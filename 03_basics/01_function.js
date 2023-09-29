@@ -27,10 +27,38 @@
 
 
 // exmaple 4 
-function myName(username){
-    if(username === undefined){
-        console.log('please enter your name')
-    }
-    return `${username} log in`
+// function myName(username){
+//     if(username === undefined){
+//         console.log('please enter your name')
+//     }
+//     return `${username} log in`
+// }
+// console.log(myName())
+
+
+// example 5 
+// rest operator
+function addcart(...num){
+    return num
 }
-console.log(myName())
+// console.log(addcart(2, 33, 900, 400))
+
+function multicart(val1, val2, ...num){
+    return num
+}
+// console.log(multicart(2, 33, 900, 400))
+
+
+// example 6 
+const user = {
+    name : 'sunny deol',
+    class : 5
+}
+function handleobject(anyobject){
+    console.log(`name is ${anyobject.name} and class is ${anyobject.class}`);
+}
+// handleobject(user)
+handleobject({
+    name : 'sunny deol',
+    class : 5
+})
