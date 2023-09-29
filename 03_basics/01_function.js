@@ -58,7 +58,17 @@ function handleobject(anyobject){
     console.log(`name is ${anyobject.name} and class is ${anyobject.class}`);
 }
 // handleobject(user)
-handleobject({
-    name : 'sunny deol',
-    class : 5
-})
+// handleobject({
+//     name : 'sunny deol',
+//     class : 5
+// })
+
+
+
+const myArray = [2, 33, 900, 400]
+
+function handle(getArray){
+    return getArray[2]
+}
+// console.log(handle(myArray));
+console.log(handle([2, 33, 900, 400]));
