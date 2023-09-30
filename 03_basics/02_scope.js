@@ -19,3 +19,24 @@
 // error 
 // console.log(ex1);
 // console.log(exx1);
+
+// example 2 
+
+// 2) Function scope
+
+function ex2(){
+    var name = 'ajay'
+    return name
+}
+// console.log(ex2());
+// console.log(name)
+
+
+// example 3 
+// Global Scope  
+const a = 1;
+let b = 2
+var c = 3
+// console.log(a);
+// console.log(b);
+// console.log(c);
