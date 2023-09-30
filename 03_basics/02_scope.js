@@ -40,3 +40,43 @@ var c = 3
 // console.log(a);
 // console.log(b);
 // console.log(c);
+
+
+// scope and hosting 
+// example 4
+// function one(){
+//     const name = 'ajay'    
+//     function two(){
+//         const website  = 'google'
+//         console.log(name)
+//     }
+//     // console.log(website)
+//     two()
+// }
+// one()
+
+
+// example 5 
+
+// if(true){
+//     const name = "ajay"
+//     if(name === "ajay"){
+//         const website  = ' google'
+//         console.log(name + website)
+//     }
+//     // console.log(website)
+// }
+// // console.log(name)
+
+
+// example 6
+
+// console.log(game(3))
+function game(num){
+    return num + 1
+}
+
+console.log(gamex(8))
+const gamex =  function (add){
+    return add + 2
+}
