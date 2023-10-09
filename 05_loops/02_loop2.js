@@ -10,9 +10,17 @@
 // }
 
 // example 2
-const myArray = ['game', 'batman', 'superman']
-let ex2 = 0 
-while(ex2 < myArray.length){
-    console.log(myArray[ex2])
-    ex2++
-}
+// const myArray = ['game', 'batman', 'superman']
+// let ex2 = 0 
+// while(ex2 < myArray.length){
+//     console.log(myArray[ex2])
+//     ex2++
+// }
+
+
+// exmaple 3
+// let ex1 = 0 
+// do{
+//     console.log(ex1)
+//     ex1++
+// }while(ex1 < 10)
