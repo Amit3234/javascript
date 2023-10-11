@@ -40,5 +40,14 @@ const books = [
   ];
 
 // const ex4 = books.filter( (item) => item.genre === 'History')
-const ex4 = books.filter( (item) => item.publish > 1990 && item.genre === 'History')
-console.log(ex4);
+// const ex4 = books.filter( (item) => item.publish > 1990 && item.genre === 'History')
+// console.log(ex4);
+
+
+// exmaple 5 
+const ex5 = [1,2,3,4,5,6,7,8,9,10];
+const num = ex5
+              .map( (item) => item * 10)
+              .map( (item) => item + 1)
+              .filter( (item) => item > 40)
+console.log(num)
