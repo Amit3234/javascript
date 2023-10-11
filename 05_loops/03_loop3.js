@@ -26,7 +26,7 @@ for (const [key, value] of map) {
 
 
 
-// obj iterator
+// object is not iterable using for of loop
 
 const game = {
     game1 : 'spiderman',
