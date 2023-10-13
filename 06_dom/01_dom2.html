@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        .black{
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>
+<body class="black">
 
     <div class="parent">
         <div class="day">Monday</div>
@@ -15,8 +21,11 @@
     </div>
     
     <script>
-        const parent = document.getElementsByClassName('parent')
-        console.log(parent)
+        const parents = document.getElementsByClassName('parent')
+        console.log('game start')
+        console.log(parents)
+        console.log(parent.children);
+        console.log(parent.children[1].innerHTML);
     </script>
 </body>
 </html>
