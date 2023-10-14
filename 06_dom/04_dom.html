@@ -32,6 +32,12 @@
     li.textContent = "typescript"
     target.replaceWith(li)
 
+    const change = document.querySelector('li:last-child')
+    change.outerHTML = '<li>golang</li>'
+
+    const replace = document.querySelector('li:last-child')
+    replace.remove()
+
 
 
     </script>
