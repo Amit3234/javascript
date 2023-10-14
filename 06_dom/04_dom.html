@@ -19,7 +19,12 @@
       }
       addMore("python");
 
-      
+      function newLanguage(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+      }
+      newLanguage('java')
     </script>
   </body>
 </html>
