@@ -12,6 +12,7 @@
     </ul>
 
     <script>
+
       function addMore(newlist) {
           const addLi = document.createElement("li");
           addLi.innerHTML = `${newlist}`;
@@ -25,6 +26,14 @@
         document.querySelector('.language').appendChild(li)
       }
       newLanguage('java')
+
+    const target = document.querySelector('li:nth-child(2)')
+    const li = document.createElement('li')
+    li.textContent = "typescript"
+    target.replaceWith(li)
+
+
+
     </script>
   </body>
 </html>
