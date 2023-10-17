@@ -1,5 +1,6 @@
-```
 Project 1
+
+```
 
 const buttons = document.querySelectorAll('.button'),
 const body = document.querySelector('body');
@@ -25,10 +26,9 @@ buttons.forEach( (buttonn) => {
 
 })
 
-
 ```
 
-project 2
+Project 2
 
 ```
 
@@ -51,6 +51,19 @@ form.addEventListener('submit', (e) => {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+
+```
+
+Project 3 
+
+```
+
+const clock = document.querySelector('#clock');
+
+setInterval(function() {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000)
 
 
 ```
