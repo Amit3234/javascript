@@ -34,23 +34,46 @@
 // })
 
 // exmaple 4
-const promisFour = new Promise(function(resolve, reject) {
+// const promisFour = new Promise(function(resolve, reject) {
+//     setTimeout(() => {
+//         let error = false;
+//         if(!error){
+//             resolve({username: 'ram', rollno: 10})
+//         } else{
+//             reject('ERROR')
+//         }
+//     }, 1000)
+// })
+// promisFour.then((data) => {
+//     console.log(data);
+//     return data.username
+// }).then((username) => {
+//     console.log(username)
+// }).catch(function(err) {
+//     console.log('error')
+// }).finally(()=> {
+//     console.log('The promise is either resolved or rejected')
+// });
+
+
+// exmaple 5
+
+const promisFive = new Promise(function(resolve, reject) {
     setTimeout(() => {
-        let error = false;
+        let error = true;
         if(!error){
-            resolve({username: 'ram', rollno: 10})
+            resolve({username: 'sham', rollno: 20})
         } else{
             reject('ERROR')
         }
     }, 1000)
 })
-promisFour.then((data) => {
-    console.log(data);
-    return data.username
-}).then((username) => {
-    console.log(username)
-}).catch(function(err) {
-    console.log('error')
-}).finally(()=> {
-    console.log('The promise is either resolved or rejected')
-})
+async function proFive(){
+    try {
+        const response = await promisFive
+        console.log(response)
+    } catch (error) {
+        console.log(error);
+    }
+}
+proFive()
