@@ -57,23 +57,47 @@
 
 
 // exmaple 5
+// const promisFive = new Promise(function(resolve, reject) {
+//     setTimeout(() => {
+//         let error = true;
+//         if(!error){
+//             resolve({username: 'sham', rollno: 20})
+//         } else{
+//             reject('ERROR')
+//         }
+//     }, 1000)
+// })
+// async function proFive(){
+//     try {
+//         const response = await promisFive
+//         console.log(response)
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// proFive()
 
-const promisFive = new Promise(function(resolve, reject) {
-    setTimeout(() => {
-        let error = true;
-        if(!error){
-            resolve({username: 'sham', rollno: 20})
-        } else{
-            reject('ERROR')
-        }
-    }, 1000)
+
+// exmaple 6
+// async function getdata(){
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//     // console.log(response)
+//         const data = await response.json()
+//         console.log(data)
+//     } catch (error) {
+//         console.log('E: ', error)
+//     }
+// }
+// getdata()
+
+
+// exmaple 7
+fetch('https://jsonplaceholder.typicode.com/users')
+.then( (response) => {
+    return response.json()
 })
-async function proFive(){
-    try {
-        const response = await promisFive
-        console.log(response)
-    } catch (error) {
-        console.log(error);
-    }
-}
-proFive()
+.then( (response) => {
+    console.log(response)
+})
+.catch((error) => console.log(error) )
