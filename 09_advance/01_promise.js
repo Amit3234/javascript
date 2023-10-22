@@ -25,11 +25,32 @@
 
 
 // example 3
+// const promiseThree = new Promise(function(resolve, reject) {
+//     setTimeout(function(){
+//         resolve({username: 'rohan', email : 'rohan@gmail.com'})
+//     }, 1000)
+// }).then(function(data){
+//     console.log(data)
+// })
 
-const promiseThree = new Promise(function(resolve, reject) {
-    setTimeout(function(){
-        resolve({username: 'rohan', email : 'rohan@gmail.com'})
+// exmaple 4
+const promisFour = new Promise(function(resolve, reject) {
+    setTimeout(() => {
+        let error = false;
+        if(!error){
+            resolve({username: 'ram', rollno: 10})
+        } else{
+            reject('ERROR')
+        }
     }, 1000)
-}).then(function(data){
-    console.log(data)
+})
+promisFour.then((data) => {
+    console.log(data);
+    return data.username
+}).then((username) => {
+    console.log(username)
+}).catch(function(err) {
+    console.log('error')
+}).finally(()=> {
+    console.log('The promise is either resolved or rejected')
 })
