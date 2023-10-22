@@ -14,11 +14,22 @@
 
 
 // example 2
-new Promise(function(resolve, reject) {
+// new Promise(function(resolve, reject) {
+//     setTimeout(function(){
+//         console.log('shortcut promise')
+//         resolve()
+//     }, 1000)
+// }).then(function(){
+//     console.log('run shortcut promise')
+// })
+
+
+// example 3
+
+const promiseThree = new Promise(function(resolve, reject) {
     setTimeout(function(){
-        console.log('shortcut promise')
-        resolve()
+        resolve({username: 'rohan', email : 'rohan@gmail.com'})
     }, 1000)
-}).then(function(){
-    console.log('run shortcut promise')
+}).then(function(data){
+    console.log(data)
 })
