@@ -10,3 +10,9 @@ let ex1 = new Date()
 // console.log(ex1.toLocaleString())
 // console.log(ex1.toLocaleDateString())
 
+
+// exmaple 2  
+const ex2 = new Date(2023, 0, 22)
+const ex22 = new Date('12-01-2023')
+console.log(ex2.toLocaleString())
+console.log(ex22.toLocaleString())
