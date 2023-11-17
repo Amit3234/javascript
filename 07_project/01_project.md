@@ -49,8 +49,16 @@ form.addEventListener('submit', (e) => {
   } else {
     const bmi = (weights / ((heights * heights) / 10000)).toFixed(2);
     results.innerHTML = `<span>${bmi}</span>`;
+    if (bmi >= 18.6) {
+      score.innerHTML = `<p>Under Weight</p>`;
+    } else if (bmi >= 18.6 && bmi <= 24.9) {
+      score.innerHTML = `<p>Normal Range</p>`;
+    } else {
+      score.innerHTML = `<p>Overweight </p>`;
+    }
   }
 });
+
 
 ```
 
