@@ -1,6 +1,6 @@
-Project 1
+# Project 1 Solution
 
-```
+```javascript
 
 const buttons = document.querySelectorAll('.button'),
 const body = document.querySelector('body');
@@ -28,9 +28,9 @@ buttons.forEach( (buttonn) => {
 
 ```
 
-Project 2
+# Project 2 Solution
 
-```
+```javascript
 
 const form = document.querySelector('form');
 
@@ -62,9 +62,9 @@ form.addEventListener('submit', (e) => {
 
 ```
 
-Project 3 
+# Project 3 Solution
 
-```
+```javascript
 
 const clock = document.querySelector('#clock');
 
